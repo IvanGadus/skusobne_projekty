@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='img/character-01.png' rel='shortcut icon' type='image/png'>
+    <link rel="stylesheet" href="kaskady.css" type="text/css">
+    
+  </head>
+  <body>
+  <header>
+  <h2>Vypracované témy na MS_2019</h2>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="informacie.html">Informácie okolo nás</a></li>
+    <li><a href="internet.html">Internet a informačná spoločnosť</a></li>
+    <li><a href="osko.html">Počítačové systémy a operačný systém</a></li>
+    <li><a href="word.html">Word</a></li>
+    <li><a href="powerpoint.html">PowerPoint</a></li>
+    <li><a href="programovanie.html">Algoritmizácia a programovanie </a></li>
+    <li><a href="c.html">Jazyk C</a></li>
+    <li><a class="active" href="java.html">Java</a></li>
+    <li><a href="HW.html">Hardvér</a></li>
+    <li><a href="tahacik.html">Ťaháčik</a></li>
+  </ul>
+  </nav>
+  <article>
+  <h2>Java</h2>
+  <h3>Charakteristika </h3>
+  <ul>
+    <li>objektovo orientovaný programovací jazyk</li>
+    <li>nezávislosť na platforme. Program je napisaný v jazyku Java beží bez nutnosti prevádzať akékoľvek úpravy zdrojového kódu prakticky na všetkých operačných systémoch</li>
+    <li>využitie v prostredí Internetu. Java umožňuje jednoduché používanie v prostredí sete internet, niekdy bývá nazývana "jazykom internetu".</li>
+    <li>integracia grafického a sieťového rozhrania, možnosť práce s multimédiami.</li>
+    <li>zdarma</li>
+    <li>jednoduchá syntax</li>
+    <li>vysoký výkon.</li>
+    <li>jednoduchá práca s objektami prostredníctvom tzv. garbage collectora</li>
+    <li>bezpečnosť. Odstranenie rady potenciálnych nebezpečných konštrukcií, ktoré bývajú zdrojom častých a ťažko odhaliteľných chýb.</li>
+  </ul>
+  <h3>Dátové typy </h3>
+  <ul>
+    <li>celé číslo - int</li>
+    <li>des. čísla – float                  (b= 7.36)</li>
+    <li>reálne – double</li>
+    <li>dlhé celé čislo – long           (m=150 000l)</li>
+    <li>krátke celé číslo – byte        (b=100)</li>
+    <li>log. hodnoty – boolean        (hodnota - true/false)</li>
+    <li>znak – char                          (char c='A')</li>
+    <li>textový reťazec – String      (String s='Ahoj')</li>
+  </ul>
+  <h3>Deklarácia </h3>
+  int a = 15;<br>
+  <h3>Operátory a operácie </h3>
+  <ul>
+    <li>súčet '+'</li>
+    <li>rozdiel '-'</li>
+    <li>súčin '*'</li>
+    <li>podiel '/'</li>
+    <li>zvyšok '%'</li>
+  </ul>
+  <h3>Podmienka 'if‘</h3>
+  <img src="img/java1.png" alt="java1.png, 59kB" title="java1" border="0" height="252" width="594"><br>
+  <h3>Cyklus 'for'</h3>
+  <img src="img/java2.png" alt="java2.png, 6,9kB" title="java2" border="0" height="192" width="561"><br>
+  <h3>Cyklus 'while'‘</h3> 
+  <img src="img/java3.png" alt="java3.png, 10,0kB" title="java3" border="0" height="245" width="642"><br>
+  <h3>Cyklus 'do-while'</h3>
+  <img src="img/java4.png" alt="java4.png, 9,7kB" title="java4" border="0" height="199" width="444"><br>
+  <h3>Switch-case</h3>
+  <img src="img/java5.png" alt="java5.png, 39kB" title="java5" border="0" height="337" width="387"><br>
+  <h3>Premenné</h3>
+  <ul>
+    <li>public – k premennej sa bude dať pristupovať z ľubovoľnej tried</li>
+    <li>protected – k premennej sa bude dať pristupovať z tried rovnakého balíka (package) a z tried, kt. vznikli odvodením triedy</li>
+    <li>private – k premennej sa bude dať pristupovať len z metód tejto triedy</li>
+    <li>typy metód:</li>
+    <ul>
+      <li>◦ak metóda nič nevracia – void()
+      public void vypis(){System.out.println(„Volám sa ... „ +meno)};</li>
+      <li>◦ak vracia hodnotu – príkaz 'return'
+    </ul>
+  </ul>
+  <h3>Reťazce</h3>
+  <img src="img/java6.png" alt="java6.png, 10kB" title="java6" border="0" height="124" width="462"><br>
+  <b>Metóda na výpis  <br>
+  Reťazec znakov (píše sa do zátvoriek a medzi úvodzovky<br>
+  Metóda na výpis hodnoty premennej (píše sa mimo úvodzoviek a s ostatnými reťazcami sa spája pomocou ‚+‘ , kt. sa píše pred aj za)</b><br>
+  <ul>
+    <li>charAt(x) – znak na danej pozícii (začina na ‚0‘)</li>
+    <li>indexOf(znak) – zistí pozíciu znaku v reťazci</li>
+    <li>lenght() – počet znakov obsiahnutých v reťazci</li>
+    <li>toLowerCase – veľké písmen -> malé</li>
+    <li>toUpperCase – malé -> veľké</li>
+    <li>replace(čo,čím) – nahradí znak iným znakom</li>
+    <li>substring(od_znaku) – vytvorí podreťazec od danej pozície až po koniec</li>
+    <li>substring(od_znaku_po_znak) – vytvorí podreťazec od danej pozície pod inú danú pozíciu</li>
+    <li>Substring.valueOff(datovy_typ) – spraví z dát. typu reťazec</li>
+    <li>retazec1.concat(retazec2) – spájanie reťazcov </li>
+  </ul>
+  <h3>Vytvorenie projektu v NETBeans</h3>
+  <img src="img/java7.png" alt="java7.png, 138kB" title="java7" border="0" height="640" width="538"><br>
+  <h3>Vytvorenie triedy v NETBeans</h3>
+  <img src="img/java8.png" alt="java8.png, 162kB" title="java8" border="0" height="549" width="581"><br>
+  <img src="img/java9.png" alt="java9.png, 66kB" title="java9" border="0" height="560" width="816"><br>
+  <img src="img/java10.png" alt="java10.png, 127kB" title="java10" border="0" height="449" width="786"><br>
+  <h3>Triedy (konkrétny príklad - skladaním)</h3>
+  <img src="img/java11.png" alt="java11.png, 250kB" title="java11" border="0" height="500" width="750"><br>
+  <h3>Triedy (konkrétny príklad - dedením)</h3>
+  <img src="img/java12.png" alt="java12.png, 81kB" title="java12" border="0" height="689" width="984"><br>
+  <h2>C-ečko</h2>
+  <img src="img/java13.png" alt="java13.png, 27kB" title="java13" border="0" height="714" width="1152"><br>
+  <img src="img/java14.png" alt="java14.png, 34kB" title="java14" border="0" height="882" width="642"><br>
+ 
+ 
+ 
+  </article>
+   
+  </body>
+</html>

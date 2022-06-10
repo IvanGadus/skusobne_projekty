@@ -1,0 +1,45 @@
+header {
+  background-color: #666;
+  padding: 1px; 
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-left: 20.8%;
+
+}
+nav {
+  width: 20%;
+  height: 98.5%;
+  font-size: 20px; 
+  background: #ccc;
+  margin-top: 8px;
+  
+  position: fixed;
+  top:0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: rgb(0,208,144);
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+  
+  article {
+  padding: 0px 0px 0px 22%;
+
+}

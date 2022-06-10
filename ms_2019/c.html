@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='img/character-01.png' rel='shortcut icon' type='image/png'>
+    <link rel="stylesheet" href="kaskady.css" type="text/css">
+    
+    
+  </head>
+<body>
+  <header>
+  <h2>Vypracované témy na MS_2019</h2>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="informacie.html">Informácie okolo nás</a></li>
+    <li><a href="internet.html">Internet a informačná spoločnosť</a></li>
+    <li><a href="osko.html">Počítačové systémy a operačný systém</a></li>
+    <li><a href="word.html">Word</a></li>
+    <li><a href="powerpoint.html">PowerPoint</a></li>
+    <li><a href="programovanie.html">Algoritmizácia a programovanie </a></li>
+    <li><a class="active" href="c.html">Jazyk C</a></li>
+    <li><a href="java.html">Java</a></li>
+    <li><a href="HW.html">Hardvér</a></li>
+    <li><a href="tahacik.html">Ťaháčik</a></li>
+  </ul>
+  </nav>
+  <article>
+  <h2>Programovací jazyk C</h2>
+  Programovací jazyk C je štandardný programovací jazyk vyvinutý začiatkom sedemdesiatych rokov. Autorom jazyka je Dennis Ritchie. Pôvodne bol určený pre použitie na operačných systémoch UNIX. Odvtedy sa rozšíril na mnohé iné operačné systémy a je jedným z najpoužívanejších programovacích jazykov. C sa cení vďaka jeho efektívnosti a je najpopulárnejším jazykom na písanie systémového softvéru, hoci sa používa aj na tvorbu aplikačného softvéru. Tiež sa bežne používa pri výuke programovania, hoci nie je určený pre úplných začiatočníkov. <br>
+  <h3>Štruktúra programu </h3>
+  Štruktúra programu v jazyku C má obecný tvar <br>
+  <ul>
+     <li>1.Skupina hlavičkových súborov štandardných funkcií</li>
+     <li>2.Definície užívateľských funkcií</li>
+     <li>3.Deklarácie globálnych premenných</li>
+     <li>4.Funkcia main</li>
+     <li>5.Ostatné užívateľské funkcie</li>
+  </ul>
+  Štandardné knižničné funkcie, ktoré sa vyskytujú v zdrojovom texte programu (časť 4, resp. 5), sú v celkovej štruktúre programu reprezentované svojimi hlavičkovými súbormi, spravidla uvedenými na začiatku programu (časť 1). Najjednoduchší úvodný program pre výpis textu na obrazovku má tvar <br>
+  <img src="img/c1.png" alt="c1.png, 4,2kB" title="c1" border="0" height="157" width="596"><br>
+  <h3>Matematické funkcie</h3>
+  <b>math.h</b> je hlavičkový súbor štandardnej knižnice jazyka C, ktorý sprístupňuje matematické funkcie (napr. goniometrické funkcie, logaritmy) a konštanty (napr. Ludolfovo číslo). Hlavičkový súbor sa do zdrojového kódu vkladá pomocou direktívy preprocesoru: #include <br>
+  <h3>Funkcia pow</h3>
+  Funkcia pow (z anglického power, čo znamená umocňovať) je funkcia, ktorá umožňuje umocňovať reálny základ reálnym číslom. Pri programovaní sa často miesto tejto funkcie používa súčin niekoľkých premenných, napríklad {\displaystyle x^{3}=x\cdot x\cdot x} {\displaystyle x^{3}=x\cdot x\cdot x}. V prípade, že je potreba spočítať druhú odmocninu, možno použiť preddefinovanú funkciu sqrt, prípadne sa používa alternatíva v tvare pow(x, 1.0/2.0), čo je základ umocnenia na jednu polovicu. Toto sa používa aj u iných odmocnín. Pri počítaní nepárnej odmocniny je v matematike definovaná odmocnina zo záporného čísla, ale u tejto funkcie toto nie je definované. Tento problém možno obísť podmienkami if a else a pomocou funkcie abs(x)<br>
+  <img src="img/c2.png" alt="c2.png, 7,1kB" title="c2" border="0" height="258" width="489"><br>
+  <h3>Funkcia sqrt</h3>
+  Funkcia sqrt (z anglického square root, čo znamená druhá odmocnina) je ďalšia funkcia, ktorú je možné volať v tvare z = sqrt(x);. Pre túto funkciu nie je definovaná odmocnina zo záporného čísla. Tomuto problému možno zabrániť príkazom abs(x) alebo podmienkami if a else. Alternatíva tohoto príkazu je príkaz pow, kde je premenná umocnená na jednu polovicu.<br>
+  <img src="img/c3.png" alt="c3.png, 11kB" title="c3" border="0" height="407" width="461"><br>
+  <b>Tabuľka s prehľadom najpoužívanejších príkazov tejto knižnice</b> <br> 
+  <img src="img/c4.png" alt="c4.png, 21kB" title="c4" border="0" height="595" width="489"><br>
+  <h3>Základné dátové typy </h3> 
+  <h4>1.celočíselné</h4> 
+  <ul>
+    <li>char - znak (má veľkosť 8 bite)</li>
+    <li>short - krátke celé číslo (má veľkosť 16 bite)</li>
+    <li>int - celé číslo (má veľkosť 16 bite alebo 32 bite)</li>
+    <li>long - dlhé celé číslo (má veľkosť 32 bite) (používa sa pri kompilátore, ktorý generuje šesťnásť bitový kód, alebo ak má operačný systém šesťnásť bitovú architektúru)</li>
+    Môžu byť signed, teda záporné, nula a záporné celé čísla alebo unsigned, teda nula a kladné celé čísla. <br>
+  </ul>
+  <h4>2.reálne (s desatinnou čiarkou):</h4>
+  <ul>
+    <li>float - reálne číslo (má veľkosť 32 bite)</li>
+    <li>double - reálne číslo s dvojitou presnosťou (má veľkosť 64 bite)</li>
+    <li>long double - reálne číslo najväčšie (má veľkosť 80 bite) </li>
+  </ul>
+  <h2>Premenné </h3>
+  <b>Zvykom je používať nasledovné identifikátory premenných:</b><br> 
+  i j k - indexy, parametre cyklov<br>  
+  c - ch - znaky<br> 
+  m n - čítače <br> 
+  f - r - reálne čísla    <br> 
+  p_ - začiatok identifikátoru napr. p_plat <br> 
+  s - reťazce* <br> 
+  *neznamená to, že každý reťazec sa musí nazvať s, ale aby sa nestalo, že ak sa v programe vyskytne identifikátor s, nemôže to byť napr. identifikátor pre reálne číslo.<br> 
+
+  Pokiaľ sa má premenná v programe použiť, je treba jej priradiť nejakú hodnotu. <br> 
+  <b>Príklady: </b><br> 
+  j = 5; <br> 
+  d = 'z' <br> 
+  f = f + 3,14 * i; <br> 
+  Pretože priradenie je výraz, je možné niekoľkonásobné priradenie:<br>  
+  k = j = i = 2;<br>  
+  Vyhodnocuje sa sprava doľava: <br> 
+  k = (j = (i = 2))    <br> 
+  Všetky premenné majú rovnakú hodnotu: 2 <br>
+  <h3>Údaje (hodnoty) priraďované premenným sa nazývajú konštanty a sú: </h3> 
+  <b>Celočíselné:</b><br> 
+  desiatkové 15, 0, 1<br>  
+  osmičkové 065, 015, 0, <br>  
+  šestnástkové 0x12, 0X3A, 0XCD, 0xCD, 0Xcd, 0x15, 0x0, 0x1<br>  
+
+  <b>Reálne: </b><br> 
+  15., 56.8, .78, 3.<br>  
+
+  <b>Znakové:</b><br>  
+  'a', '*', '4'<br>
+  <img src="img/c5.png" alt="c5.png, 13kB" title="c5" border="0" height="280" width="680"><br>   
+  <h3>Operátory</h3>  
+  <b>Binárne:</b><br>
+  + sčítanie<br> 
+  - odčítanie <br>
+  * násobenie <br>
+  / delenie (celých aj desatinných čísiel)<br> 
+  <b>príklad:</b><br> 
+  (int) 9 / 2 = 4 (ako vidíte, nie je to presné)<br>
+  (float) 9 / 2 = 4.500000 (6 desatinných miest)<br>
+  % delenie modulo<br> 
+  <b>príklad:</b><br> 
+  9 % 2 = 1 (zvyšok po celočíselnom delení) <br>
+  <b>Špeciálne: </b><br>
+  inkrement ++ alebo -- <br>
+  <b>príklad:</b> <br>
+  ++výraz (výraz je najprv zväčšený o 1 a potom je táto nová hodnota vrátená ako hodnota výrazu) <br>
+  výraz++ (vrátená je pôvodná hodnota výrazu a potom je výraz zväčšený o 1) <br>
+  -- je ekvivalent ++<br>
+  <img src="img/c6.png" alt="c6.png, 16kB" title="c6" border="0" height="484" width="458"><br>
+  <b>Priraďovacie:</b><br>
+  i += j; (i = i + j)<br> 
+  i -= j; (i = i – j)<br> 
+  i *= j; (i = i * j)<br> 
+  i /= j; (i = i / j)<br> 
+  i %= j; (i = i % j)<br> 
+  a taj <br> 
+
+  <b>!!! Nepoužívajte operátory takto :</b><br> 
+  i + = j; <br>
+  ale takto:<br> 
+  i += j; <br>
+  niektorým kompilátorom to robí potiaže!!!<br> 
+  <h3>Vstup a výstup znakov </h3>
+  Na vstup a výstup jedného znaku sa používajú príkazy getchar() a putchar().<br>
+  <img src="img/c7.png" alt="c7.png, 13kB" title="c7" border="0" height="326" width="579"><br>
+  Je nutné si uvedomiť, že po volaní getchar() môžeme napísať veľa znakov, kým nestlačíme ENTER, putchar() vypíše len prvý znak, ostatné ignoruje. <br>
+  Ďalej je dôležité, že premenná znak môže byť deklarovaná ako char, ale aj ako int. Časom uvidíš, že niekedy je nutné deklarovať int a niekedy char. <br>
+  <h3>Formátovaný výstup</h3>         
+  Používa sa príkaz printf().<br>
+  printf("%d", i)<br> 
+  Kde '%d' označuje že argument je formátová špecifikácie, 'i' označuje deklarovanú a definovanú premennú.<br>
+
+  <b>So znakom % môže byť uvedený celý rad formátových špecifikácií:</b><br>
+  <b>c</b> - znak (pozn. Jeden znak je lepšie čítať zn = getchar(); ako scanf(„%c“, &zn) ;)<br> 
+  <b>d</b> - desiatkové číslo typu signed int<br>
+  <b>ld</b> - desiatkové číslo typu signed long <br>
+  <b>u</b> - desiatkové číslo typu unsigned int <br>
+  <b>lu</b> - desiatkové číslo typu unsigned long <br>
+  <b>f</b> - float (pre printf() tiež double) <br>
+  <b>Lf</b> - long double (Pozor, L musí byť veľké)<br> 
+  <b>lf</b> - double (Pozor, niekedy sa nedá použiť pre printf())<br>
+  <b>x</b> - hexadecimálne číslo malými písmenami napr.: 1a2c <br>
+  <b>X</b> - hexadecimálne číslo veľkými písmenami napr.: 1A2C<br> 
+  <b>o</b> - osmičkové <br> 
+  <b>s</b> - reťazec   <br>         
+  Treba si uvedomiť, že počet argumentov výstupu môže byť viac než 2, to znamená že sa dá vytlačiť viac než jedna premenná.<br> 
+  <b>Príklad:</b><br>
+  <img src="img/c8.png" alt="c8.png, 56kB" title="c8" border="0" height="452" width="715"><br>
+  <h2>Vetvenie</h2>
+  <h3>Podemienky</h3>
+  Podmienky zapisujeme pomocou kľúčového slova if, za ktorým nasleduje logický výraz. Ak je výraz pravdivý, vykoná sa nasledujúci príkaz. Ak nie, nasledujúci príkaz sa preskočí a pokračuje sa až pod ním.<br>
+  napr. 
+  if (5 < 15)<br> 
+  printf("Pravda \n");<br> 
+  printf("Program zde pokracuje dal \n");<br>        
+  else<br>                      
+  else vykoná nasledujúci príkaz alebo blok príkazov v prípade, že sa podmienka nevykoná napr.<br> 
+  int a = 0; // do a si pridáme 0 <br>
+  if (a == 0) // pokiaľ je a 0, dáme do a 1 <br>
+  a = 1; <br>
+  else // pokiaľ je a 1, dáme do a 0 <br>
+  a = 0; <br> 
+  <h2>Switch</h2>
+  Zápis viac podmienok pod sebou (relatívne) zjednodušuje konštrukcia switch  <br>
+   napr.<br>  
+   double a; <br> 
+   double b; <br> 
+   int volba; // Mohli bychom použít char, abychom zbytečně nepoužívali moc místa <br> 
+   double vysledek;<br>  
+   printf("Vitejte v kalkulacce \n"); <br> 
+   printf("Zadejte prvni cislo: \n"); <br> 
+   scanf("%lf", &a);<br>  
+   printf("Zadejte druhe cislo: \n");<br>  
+   scanf("%lf", &b); <br> 
+   printf("Zvolte si operaci: \n"); <br> 
+   printf("1 - scitani \n"); <br> 
+   printf("2 - odcitani \n"); <br> 
+   printf("3 - nasobeni \n"); <br> 
+   printf("4 - deleni \n"); <br> 
+   scanf("%d", &volba); <br> 
+   switch(volba)<br>  
+   { <br> 
+   case 1:<br>  
+   vysledek = a + b; <br> 
+   break; <br> 
+   case 2: <br> 
+   vysledek = a - b; <br> 
+   break; <br> 
+   case 3: <br> 
+   vysledek = a * b; <br> 
+   break; <br> 
+   case 4: <br> 
+   vysledek = a / b; <br> 
+   break; <br> 
+   } <br> 
+   if ((volba > 0) && (volba < 5)) <br> 
+   printf("Vysledek: %f", vysledek); <br> 
+   else <br> 
+   printf("Neplatna volba \n"); <br> 
+   printf("\n");  <br> 
+   printf("Dekuji za pouziti kalkulacky");  <br> 
+   return (EXIT_SUCCESS);  <br> 
+   } <br> 
+   <h2>Práca so súbormi</h2>
+   <h3>Otvorenie súboru</h3>
+   Predtým, než sa súborom začneme pracovať, musíme ho otvoriť. K tomu slúži funkcia fopen (). <br>
+   Pri otváraní súboru špecifikujeme mód, pre ktorý súbor otvárame. Najčastejšie je to "w" (zápis), "r" (čítanie) alebo "a" (pripisovania)<br>
+   <h3>Zápis do suboru</h3>
+   Na začiatku zavoláme funkciu fopen (), ktoréj oznámime, že chceme otvoriť súbor dopis.txt v móde pre zápis.<br> 
+   Ak súbor neexistuje, bude vytvorený. Ak už existuje, bude prepísaný! <br> 
+   napr.  <br> 
+   FILE * p_soubor = fopen("dopis.txt", "w");  <br> 
+   fprintf(p_soubor, "Drahá Brynn,\n");  <br> 
+   fprintf(p_soubor, "opatruj se, Malcolm unikl a jistě si pro mne brzy přijde jako pro prvního.\n"); <br> 
+   fprintf(p_soubor, "Musíš navést Brandona, dovést ho k amuletu, klíčem k zaříkávadlu by možná\n"); <br> 
+   fprintf(p_soubor, "mohla být levandulová růže.\n\n"); <br> 
+   fprintf(p_soubor, "Kallak\n")  <br> 
+   <h3>Zatvorenie súboru</h3>
+   Po dokončení práce so súborom ho treba zatvoriť. Asi by ste uhádli, že na to slúži funkcia fclose (). 
+   Ak by sme súbor zabudli zavrieť, chápal by operačný systém ako že s ním stále pracujeme. Ostatné programy by ho nemohli používať a tiež by sme zbytočne plytvali zdrojmi, pretože operačný systém má na počet naraz otvorených súborov väčšinou nejaké limity.<br>
+   <h3>Čítanie zo súboru</h3> 
+   int main(int argc, char** argv) {<br> 
+   FILE * p_soubor = fopen("dopis.txt", "r"); <br> 
+   if (p_soubor == NULL) <br> 
+   { <br> 
+   printf("Soubor se nepodařilo otevřít pro čtení, zkontrolujte prosím zda existuje."); <br> 
+   return 1;<br>  
+   } <br> 
+   char buffer[1024];  <br> 
+   while (fscanf(p_soubor, " %1023[^\n]", buffer) != EOF) <br> 
+   { <br> 
+   printf("%s\n", buffer); <br> 
+   } <br> 
+   if (fclose(p_soubor) == EOF)<br>  
+   {  <br> 
+   printf("Soubor se nepodařilo uzavřít."); <br> 
+   return 1;   <br> 
+   } <br> 
+   return (EXIT_SUCCESS); <br>  
+   Otvorenie súboru je rovnaké až na zámenu módu z "w" (write) na "r" (read). Teraz budeme potrebovať pomocnú premennú, tzv. Buffer, do ktorého nám bude fscanf () riadku ukladať. <br> 
+   uffer sa robí dostatočne dlhý, väčšinou 1024 znakov. Samotné čítanie riadky je umiestnené vo while cyklu a pokračuje až kým fscanf () nevráti hodnotu EOF.<br>  
+   Tá signalizuje, že sme už dosiahli konca súboru. Formátovací reťazec je potrebné upraviť, inak by sa skenovanie zastavovalo o biele znaky (medzery) a my nechceme, aby sa zastavovalo len na konci riadkov (\ n) a my tak čítali naraz celé riadky. <br> 
+   Načítanú riadky z bufferu vypíšeme a pokračujeme znova. Na konci súbor uzavrieme.<br>  
+   <h2>Cykly</h2>
+   <h3>FOR cyklus</h3>
+   Tento cyklus má stanovený pevný počet opakovaní a hlavne obsahuje tzv. Riadiace premennú (celočíselnú), v ktorej sa postupne počas behu cyklu menia hodnoty.<br> 
+   Syntax (zápis) cyklu for je nasledovná: for (premenná; podmienka; príkaz) <br>
+   <ul>
+        <li><b>premenna</b> - je riadiaca premenná cyklu, ktoré nastavíme počiatočnú hodnotu (najčastejšie 0, pretože v programovaní všetko začína od nuly, nie od jednotky). Napr. teda i = 0. V céčko si musíme premennú aj vytvoriť niekde nad tým.</li>
+        <li><b>podmienka</b> - je podmienka vykonanie ďalšieho kroku cyklu. Akonáhle nebude platiť, cyklus sa ukončí, Podmienka môže byť napr. I <10. </li>
+        <li><b>prikaz</b> - hovorí nám čo sa má v každom kroku s riadiacou premennou stáť. Teda či sa má zvýšiť alebo znížiť. K tomu využijeme špeciálnych príkazov ++ a -, tie samozrejme môžete používať aj úplne bežne mimo cyklus, slúži na zvýšenie alebo zníženie premenné o 1.</li>
+   </ul>
+   #include  <br>
+   #include <br>
+   int main(int argc, char** argv) { <br>
+   int i; <br>
+   for (i = 0; i < 3; i++)  <br>
+   {  <br>
+   printf("Knock! \n"); <br>
+   }     <br>
+   printf("Penny! \n");  <br>
+   return (EXIT_SUCCESS); <br> 
+   }   <br>
+   Cyklus prebehne 3x, spočiatku je v premennej i nula, cyklus vypíše "Knock" a zvýši premennú aj o jedna.  <br>
+   Potom beží rovnako s jednotkou a dvojkou.  <br>
+   Akonáhle je v i trojka, už nesúhlasí podmienka aj <3 a cyklus končí. <br>
+   <h3>WHILE cyklus</h3>
+   While cyklus funguje inak, jednoducho opakuje príkazy v bloku kým platí podmienka. Syntax cyklu je nasledovné: <br>
+  while (podmienka)<br> 
+  {  <br>
+  // príkazy  <br>
+  } <br>
+  napr. <br>
+  #include <br>
+  #include  <br>
+  int main(int argc, char** argv) {  <br>
+  int i = 1;<br> 
+  while (i <= 10) <br>
+  { <br>
+  printf("%d ", i); <br>
+  i++;<br> 
+  }<br> 
+  return (EXIT_SUCCESS); <br>
+  }<br> 
+  <h3>Do-while cyklus</h3> 
+  Je takmer rovnaký ako while, ale kontrolná podmienka je umiestnená až na koniec cyklu. Máme teda istotu, že minimálne raz cyklus vždy prebehne.<br> 
+  Cyklus do while není tak běžný ako předchadzajúce dva cykly, ale v niektorých situáciach je vhodnější.<br>  
+  <h2>Pole</h2> 
+  Ak potrebujeme uchovávať väčšie množstvo premenných rovnakého typu, tento problém nám rieši poľa. Môžeme si ho predstaviť ako rad priehradiek, kde v každej máme uložený jeden prvok. Priehradky sú očíslované tzv. Indexy, prvý má index 0.<br>
+  <img src="img/c9.png" alt="c9.png, 5,7kB" title="c9" border="0" height="122" width="408"><br>
+  Programovacie jazyky sa veľmi líšia v tom, ako s poľom pracujú. V nižších kompilovaných jazykoch, ktorým je práve aj jazyk C, sa musí špecifikovať pevná veľkosť poľa v zdrojovom kóde, ktorá už za behu nemožno meniť.<br> 
+  Do poľa teda nie je možné pridávať ďalšie priehradky a preto musíme myslieť na to, aby nám vždy stačilo. Jazyk C nám ďalej umožňuje vytvoriť tzv. Dynamicky alokovanej poľa alebo využívať napr. Spojových zoznamov, aby sme tento problém obišli.<br>  
+  Pre hromadnú manipuláciu s prvkami poľa sa používajú cykly.<br>  
+  Pole deklarujeme ako bežnú premennú, iba za jej názov uvedieme hranaté zátvorky s počtom prvkov:<br>  
+  int pole[10];<br>  
+  K prvkom poľa potom pristupujeme opäť cez hranatú zátvorku, poďme na prvý index (teda index 0) uložiť číslo 1.<br>  
+  int pole[10]; <br> 
+  pole[0] = 1; <br> 
+  Plniť pole takto ručne by bolo príliš pracné, použijeme cyklus a naplníme si pole číslami od 1 do 10. <br> 
+  <b>K naplneniu použijeme for cyklus:</b> <br> 
+  int pole[10];<br>  
+  int i; <br> 
+  for (i = 0; i < 10; i++) <br>  
+  { <br> 
+  pole[i] = i + 1;<br>  
+  }  <br> 
+  Aby sme pole vypísali, môžeme za predchádzajúci kód pripísať: <br> 
+  for (i = 0; i < 10; i++) <br> 
+  { <br> 
+  printf("%d ", pole[i]);<br>  
+  }   <br> 
+  return (EXIT_SUCCESS); <br> 
+  } <br>  
+  <h2>Triedenie</h2> 
+  <h3>Funkcia qsort()</h3> 
+  Najjednoduchším riešením ako zotrieďiť dáta v programovacom jazyku C je použitie knižničný funkcie qsort ():<br> 
+  void qsort(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *))<br>  
+  Prvým argumentom funkcie qsort () je "prázdny" ukazovateľ na pole, ktoré sa bude triediť.<br>  
+  Druhým argumentom je počet položiek (rozmer) pole, tretím argumentom je veľkosť jednej položky (v príklade je to počet bajtov typu int).<br>  
+  Posledným argumentom je ukazovateľ na funkciu (Compar), podľa ktorej sa budú porovnávať dva prvky z poľa. <br> 
+  int pole[POLOZEK];<br>  
+ int vetsi(int *a, int *b) <br> 
+ { <br> 
+ return *a - *b;<br>  
+ }<br>  
+ /* nezapomente nejdrive pole inicializovat nejakymi hodnotami */ <br> 
+ qsort((void *) pole, POLOZEK, sizeof(pole[0]),<br>  
+ (int (*)(const void *, const void *)) vetsi); <br> 
+ <h3>Buble sort</h3>  
+ Algoritmus bublinkového triedenia je pomerne jednoduchý ale nie moc efektívný. Prechádzate niekoľkokrát celé pole (odzadu do predu) a porovnávate susedné prvky.<br> 
+ Ak nie sú prvky správne zoradené za sebou, prehodíte ich. Takto najmenšie prvky "prebublávajú" smerom k začiatku (alebo to môže byť obrátene, ak chcete ). Začínate od konca poľa a "prebublávajú" smerom na začiatok.<br> 
+ <h3>Quick sort</h3> 
+ Algoritmus quick sort (alebo tiež "radenie delením") je jeden z najefektívnejších. Princíp je asi nasledovný.<br> 
+ Radenie polia sa rozdelí na dve časti tak, aby v ľavej (prvý, horný hovorte tomu ako chcete ...) časti poľa boli všetky čísla menšie, než čísla v pravej časti. <br>
+ Aby sa to dobre programovalo, vezme sa jeden prvok z poľa (napríklad prostredný, to je fuk), hovorme mu pivot a hľadá sa a triedi polia tak, že čísla z ľavej časti sú menšie a čísla z pravej časti sú väčšie ako pivot.<br> 
+ Na oba úseky sa použije rekurzívne rovnaký algoritmus, a tak sa pole rozdeľuje na menšie a menšie úseky, až je rozdelené na úseky dĺžky 1, čím je pole zotriedené. <br>  
+  </article>
+   
+  </body>
+</html>

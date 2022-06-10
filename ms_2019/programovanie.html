@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>CHŇO CHŇO</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='img/character-01.png' rel='shortcut icon' type='image/png'>
+    <link rel="stylesheet" href="kaskady.css" type="text/css">
+    
+    
+  </head>
+  <body>
+  <header>
+  <h2>Vypracované témy na MS_2019</h2>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="informacie.html">Informácie okolo nás</a></li>
+    <li><a href="internet.html">Internet a informačná spoločnosť</a></li>
+    <li><a href="osko.html">Počítačové systémy a operačný systém</a></li>
+    <li><a href="word.html">Word</a></li>
+    <li><a href="powerpoint.html">PowerPoint</a></li>
+    <li><a class="active" href="programovanie.html">Algoritmizácia a programovanie </a></li>
+    <li><a href="c.html">Jazyk C</a></li>
+    <li><a href="java.html">Java</a></li>
+    <li><a href="HW.html">Hardvér</a></li>
+    <li><a href="tahacik.html">Ťaháčik</a></li>
+  </ul>
+  </nav>
+  <article>
+  <h1>Algoritmizácia, programovanie</h1>
+  <h2>Algoritmus a jeho vlastnosti, program, vývojový diagram, ladiaca tabuľka, ..</h2>
+  <b>Algoritmus</b> - presný postup ktorý vedie k vykonania určitej činnosti, je to postup elementárnych príkazov ktorých realizáciou zo vstupných údajov po konečnom počte činností získame výsledky  <br>
+  Vlastnosti – požiadavky na algoritmus:                                                                                                                                                                   <br>
+  <b>ELEMENTARNOSŤ</b> – postup je zložený z jednoduchých krokov, ktoré sú pre vykonávateľa (počítač, nemysliace zariadenie, človeka) zrozumiteľné,                                                    <br>
+  <b>DETERMINOVANOSŤ</b> – postup je zostavený tak, že v každom momente jeho vykonávania je jednoznačne určené, aká činnosť má nasledovať, alebo či sa už postup skončil,                                  <br>
+  <b>REZULTATÍVNOSŤ</b> – výpočet dáva po konečnom počte krokov výsledok                                                                                                                                       <br>
+  <b>KONEČNOSŤ</b> – výpočet (činnosť vykonávaná podľa algoritmu) vždy skončí po vykonaní konečného počtu krokov                                                                                                   <br>
+  <b>HROMADNOSŤ</b> – algoritmus je použiteľný na celú triedu prípustných vstupných údajov                                                                                                             <br>
+  <b>EFEKTÍVNOSŤ</b> – výpočet sa uskutočňuje v čo najkratšom čase a s využitím čo najmenšieho množstva prostriedkov (časových i pamäťových).                                                          <br>
+  <b>Program</b> - algoritmus zapísaný v programovacom jazyku.                                             <br>
+  <b>Vývojový diagram</b> - postupnosť činností popisovaná prostredníctvom grafických značiek a textu v nich, pričom tok výpočtu je znázornený šípkami.<br>
+  <h2>Ladiaca tabuľka - testuje funkčnosť algoritmu po krokoch</h2>
+  <h2>Riešenie problemu...</h2>
+  Algoritmus na výpočet súčtu dvoch čísel:<br>
+  Vývojový diagram: <br>
+  <img src="img/prg1.jpg" alt="prg1.jpg, 48kB" title="prg1" border="0" height="624" width="1360">
+  <h2>Program:</h2>
+  <img src="img/prg2.jpg" alt="prg2.jpg, 34kB" title="prg2" border="0" height="336" width="410">
+  <h2>Programovací jazyk C</h2>
+  Štruktúra jazyka C:<br>
+  Skupina hlavičkových súborov štandardných funkcií. <br>
+  Definície užívateľských funkcií. <br>
+  Deklarácie globálnych premenných.<br> 
+  Funkcia main.<br> 
+  Ostatné užívateľské funkcie.<br> 
+  <h2>Matematické funkcie</h2>
+  Ak sú v programe použité mat.funkcie je potrebne zapísať hlavičkový súbor "math.h"<br>
+  <ul>
+    <li><b>abs(x)</b> - absolutna hodnota celeho čísla</li>
+    <li><b>fabs(x)</b> - abs.hodnota čísla s desatinou čiarkou</li>
+    <li><b>sqrt(x)</b>- druhá odmocnina</li>
+    <li><b>pow(x,y)</b>- mocnica x na y</li>
+    <li><b>log(x)</b> - pripodzený logaritmus</li>
+    <li><b>log10(x)</b>- logaritmus so zakladom 10</li>
+    <li><b>exp(x)</b>- exponencialna funkcia</li>
+    <li><b>sin(x)</b>- sínus</li>
+    <li><b>cos(x)</b> -kosínus</li>
+    <li><b>tan(x)</b> - tangens </li>
+    <li><b>round(x)</b>- zaokruhlenie</li>
+    <li><b>ceil(x)</b> - vráti najbližšie celé číslo(zaokruhli nahor)</li>
+    <li><b>floor(x)</b> - zaokruhli nadol</li>
+  </ul>
+  <h2>Dáta v programovacom jazyku</h2>
+  Identifikátor je postupnosť písmen a číslic (a niektorých špeciálnych znakov, napr. '_'), ktorá sa začína písmenom, resp znakom '_'. <br>
+  Premenná môže obsahovať:
+  <ul>
+    <li>základný preddefinovaný typ (char, int, float, double)</li>
+    <li>odvodený typ (smerník, pole, struct, union)</li>
+    <li>vymenovaný typ (enum)</li>
+    <li>užívateľom definovaný typ (typedef) </li>
+    <li>prázdny typ (void)</li>
+  </ul>
+  Konštanta: Každá konštanta patrí v algoritme do niektorej množiny prípustných hodnôt -> je určitého typu.<br>
+  <h2>Výrazy, operátory</h2>
+  Výraz je predpis obsahujúci konštanty, premenné a spôsob ich spracovania pomocou operácií a funkcií podobných tým, ktoré poznáme z matematiky. Výsledkom je hodnota príslušného typu, ktorá vznikne po vykonaní vo výraze naznačeného spracovania. napr. obsah=a*b, obsah=pí*r*r<br> 
+  Ak zapíšeme v matematike napríklad a+b, hovoríme o výraze. Ten má dva operandy a a b a jeden operátor + .<br>
+  Delenie operátorov: <br>
+  Operátory rozdeľujeme podľa počtu operandov (arity) na operátory unárne, binárne a ternálne. Binárne operátory sú aritmetické, relačné, logické, bitové a operátory priradenia a posunu. Aritmetické operátory sú aditívne a multiplikatívne. Operátory majú svoju prioritu a asociativitu. Priorita určuje, že napríklad násobenie sa vyhodnotí skôr, než napríklad sčítanie. Asociativita hovorí, či sa vyhodnocuje výraz zľava doprava, alebo naopak.<br>
+  <h2>Príkazy priradenia, vstupy, výstupy</h2>
+  Príkazy:vety jazyka prikazujúce procesoru vykonať presne stanovené činnosti. (vstupu, výstup a priradenie). Musia spracúvať iné objekty: premenné, konštanty a výrazy.<br> 
+  Jednoduché <br>
+  Zložené: pozostávajú zo sekvencie príkazov, oddeľujeme ich bodkočiarko<br> 
+  Priradenie:	priradenie hodnoty výrazu na pravej strane do premennej na ľavej strane; typ premennej a výrazu musia byť kompatibilné -	znak priradenia : = <br>
+  Vstup:tvar vstup(a1,..,an) – zo vstupného zariadenia sa prečíta n hodnôt a postupne sa priradia premenným a1,..,an.<br>
+  Výstup:tvar výstup(b1,..,bn) – vytlačia sa výstupné údaje b1,..,b<br>
+  <h2>Vetvenie programov</h2>
+  Vetvenie je v algoritmizácii reprezentované podmienkou, ktorá predstavuje možnosť rozhodnúť sa podľa pravdivosti skúmaného znaku. V závislosti od jej splnenia sa postup vetví na rôzne prípady. Ak je podmienka splnená, pokračuje sa vykonávaním vetvy označenej ako „+“ , v opačnom prípade sa spracúvajú príkazy vo vetve „-“.<br>
+  <h2>Práca so súbormi</h2>
+  Podstatným rozdielom pri práci so súbormi je použitie identifikátora súboru typu int (tzv. manipulačné číslo) namiesto FILE *, pomocou ktorého pracujeme so súborom v jednotlivých štandardných funkciách.<br>
+  Pre otvorenie súboru:<br>
+  int open(char *name,int mode);<br>
+  kde name - meno súboru <br>
+  mode - prístup k súboru (čítanie, zápis, oboje)<br> 
+  (podrobne viď popis knižnice jazyka)  <br>
+
+  Pre zatvorenie súboru:<br> 
+  int close(int handle); <br>
+
+  Čítanie a zápis do súboru:
+  int read(int handle,char *buffer,int size);   <br>
+  int write(int handle,char *buffer,int size); <br>
+  kde handle identifikátor súboru<br>
+  buffer názov bufra<br> 
+  size dĺžka bufra <br>
+  <h2>Vetvenie programov</h2>
+  Vetvenie je v algoritmizácii reprezentované podmienkou, ktorá predstavuje možnosť rozhodnúť sa podľa pravdivosti skúmaného znaku. V závislosti od jej splnenia sa postup vetví na rôzne prípady. Ak je podmienka splnená, pokračuje sa vykonávaním vetvy označenej ako „+“ , v opačnom prípade sa spracúvajú príkazy vo vetve „-“. Vo všeobecnosti možno vetvenie zapísať ako na obrázku.<br>
+  <h2>Cykly</h2>
+  Cyklus nám poskytuje prostriedok umožňujúci opakovať činnosť alebo činnosti. Pri jeho použití je potrebné vedieť, čo sa má opakovať a dokedy sa to má opakovať. Činnosť, ktorá sa opakuje, označujeme ako telo cyklu, podmienku, ktorá určuje dokedy sa bude telo cyklu opakovať, nazývame podmienka cyklu. V závislosti od vzťahu medzi telom a podmienkou cyklu môžeme cykly rozdeliť na: • cyklus so známym počtom opakovaní, • cyklus s podmienkou na začiatku, • cyklus s podmienkou na kon<br>
+  <h3>SO ZNÁMYM POČTOM OPAKOVANÍ</h3>
+  Predpokladom využitia takéhoto cyklu je, že počet opakovaní sa dá vyjadriť pred jeho odštartovaním a operácie v tele naň nemajú žiaden vplyv. Vo všeobecnosti ho možno zapísať ako na obrázku.<br>
+  <h3>S PODMIENKOU NA ZAČIATKU</h3>
+  Tento typ cyklu má podmienku, ktorá sa stará o ukončenie cyklu, umiestnenú pred telom. Ak je podmienka splnená, vykoná sa telo cyklu a opäť sa otestuje. Ak „vstupná“ podmienka nie je splnená už pri prvom vstupe do cyklu, nemusí sa tento vykonať vôbec. Graficky vyzerá zápis ako na obrázku.<br>
+  <h3>S PODMIENKOU NA KONCI</h3>
+  Tento cyklus na prvý pohľad vyzerá oproti cyklu s podmienkou na začiatku ako opačný – najprv sa vykoná telo cyklu a až potom sa zisťuje splnenie podmienky. Ak je podmienka cyklu splnená, vykonávanie cyklu sa ukončí, v opačnom prípade sa pokračuje opätovným vykonávaním tela cyklu. Dôsledkom takéhoto riadenia je, že cyklus vždy prebehne minimálne ra<br>
+  <h3>CYKLUS SO ZNÁMYM POČTOM OPAKOVANÍ (for)</h3>
+  Predpokladom využitia takéhoto cyklu je, že počet opakovaní sa dá vyjadriť pred jeho odštartovaním a operácie v tele naň nemajú žiaden vplyv. Cyklus so známym počtom opakovaní používa premennú, hovorí sa jej riadiaca premenná, ktorá si „pamätá“ koľkokrát cyklus prebehol. Po skončení tela cyklu sa automaticky (ma to na starosti cyklus, nie my) pripočíta hodnota 1 a skočí sa na začiatok cykl<br>
+  <h3>CYKLUS WHILE</h3>
+  Najskôr sa vyhodnotí podmienka. Ak je splnená - výraz má hodnotu true, vykoná sa príkaz za do. Ak je false telo sa nevykoná.Tento proces sa opakuje dovtedy, kým podmienka nenadobudne hodnotu FALSE. Teda cyklus sa ukončí vtedy, keď podmienka prvýkrát nadobudne hodnotu FALSE.test sa robí pred vykonaním daného tela cyklu, a ak podmienka nie je splnená, cyklus sa ukončí. Telo cyklu sa v tomto prípade nevykoná ani ra<br>
+  <h3>CYKLUS WHILE-DO</h3>
+  Tento typ cyklu má podmienku, ktorá sa stará o ukončenie cyklu, umiestnenú pred telom. Ak je podmienka splnená, vykoná sa telo cyklu a opäť sa otestuje. Ak „vstupná“ podmienka nie je splnená už pri prvom vstupe do cyklu, nemusí sa tento vykonať vôbe<br>
+  <h2>Údajový typ- pole</h2>
+  Pre spracovanie väčšieho počtu údajov rovnakého typu. Ako údajová štruktúra sa v takomto prípade používa typ pole – array. Možno si ho predstaviť ako zoznam, ktorý obsahuje hodnoty rovnakého typu. Tieto sú jednoznačne určené indexom, z ktorého sa dá určiť ich umiestnenie v zozname. S poľom sme sa stretli už v prípade údajového typu string, ktorý vlastne predstavuje pole znakov (pole údajov typu char). Pred použitím poľa treba najprv kompilátoru túto požiadavku oznámiť. Môžeme to urobiť dvoma spôsobmi – pri deklarácii premennej alebo definíciou nového typu. V prvom prípade uvedieme údaje o poli v deklaračnej časti za menom premennej a dvojbodkou. Kľúčové slovo array hovorí o tom, že premenná bude typu pole, nasleduje typu indexu (v hranatých zátvorkách) a napokon typ údajov uložených v poli uvedený za kľúčovým slovíčkom <br>
+  <h2>Procedúry a funkcie</h2>
+  <b>PROCEDÚRA</b>: Prvým typom podprogramu je procedúra. Spravidla obsahuje postupnosť príkazov, ktoré riešia v programe nejakú pod úlohu. Procedúra pozostáva z rovnakých častí ako program – obsahuje povinnú hlavičku pozostávajúcu z kľúčového slova procedure a názvu procedúry, môže (nemusí) nasledovať deklaračná časť a po nej príkazy umiestnené medzi programovými zátvorkami begin a end. Všeobecný zápis má podobu: procedure NazovProcedury;<br> 
+  <b>FUNKCIA</b>: Okrem procedúr ponúkajú programovacie jazyky i podprogramy, ktoré ako výsledok svojej činnosti vrátia hodnotu. Označujeme ich ako funkcie. Funkcie ako také poznáme už z matematiky (abs, sin, cos a pod.), mnohé máme k dispozícii i v programovacích jazykoch a dokážeme vytvoriť i vlastné. Funkcia sa definuje kľúčovým slovom function a za jej názov sa uvádza typ výsledku. 
+  function NazovFunkcie:typ;<br>
+  pričom typ predstavuje niektorý z jednoduchých, prípadne i štruktúrovaných typov (pole). Volanie funkcie je výraz, ktorého hodnotou je výsledok získaný vykonaním funkcie. V programe ho môžeme použiť všade tam, kde sa môže použiť hodnota rovnakého typu ako je výsledok funkcie. Napríklad v priraďovacom príkaze môže byť vložená do premennej.<br>
+  mojText:=IntToStr(cislo);<br>
+  max:=VratMaximum;<br>
+  Výsledok funkcie sa definuje v jej tele priraďovacím príkazom, v ktorom sa výsledná hodnota priradí názvu funkcie:<br>
+  Globálne a lokálne premenné:<br>
+  V programe je v prvom rade potrebné hodnoty do poľa načítať, na to by však naše doterajšie vedomosti mali postačovať. V ďalšom kroku budeme v programe volať procedúru na výpočet maxima. Získanú hodnotu umiestnime do premennej max a v tele hlavného programu vypíšeme. Premenné deklarované na začiatku programu sú prístupné a použiteľné na ľubovoľnom mieste programu počas jeho behu a označujeme ich ako globálne. Premenné definované v tele podprogramu vznikajú až pri volaní podprogramu a môžeme k nim pristupovať len v rámci podprogramu, v ktorom sú deklarované. Po ukončení podprogramu sa z pamäte uvoľňujú – označujeme ich ako lokálne.<br>
+  <h2>Riešiť problémy a rozumieť hotovým programom, určiť vlastnosti vstupov, výstupov a vzťahy medzi nimi, vedieť ich testovať a modifikovať, ...</h2> 
+  <b>Problém</b> - stav, v ktorom jestvuje rozdiel medzi tým, čo v danom momente máme a tým, čo chceme dosiahnuť.<br> 
+  <b>Riešenie problému</b> - odstraňovanie rozdielu medzi aktuálnym stavom a tým, čo chceme dosiahnuť.<br> 
+  <b>Algoritmus</b> - návod na vykonanie činnosti, ktorý nás od (meniteľných) vstupných údajov privedie v konečnom čase k výsledku.<br>
+  <h2>OOP – objekty, triedy, metódy</h2>
+  <b>Objektovo orientované programovanie alebo objektové programovanie</b> (je programovacia paradigma založená na používaní dátových štruktúr nazývaných objekty a ich interakcie na vývoj aplikácií. Princípy objektového programovania boli rozpracované už v 70. rokoch 20. storočia, no širšie sa vo vývoji softvéru začalo uplatňovať až koncom 20. storočia.<br>
+  <b>Objekt (object)</b> je základným stavebným kameňom vývoja aplikácii a každý program napísaný v jazyku Java obsahuje minimálne jeden objekt. Je to softvérový zväzok premenných a príbuzných metód (metóda je funkcia definovaná v triede).<br>
+  Softvérové objekty si môžeme predstaviť ako skutočné objekty z nášho života. Všetko, čo tieto objekty vedia (stav) alebo čo môžu robiť (správanie), je vyjadrené premennými a metódami.<br> 
+  <b>Trieda (class)</b> je predloha alebo prototyp definujúci premenné a metódy pre určitý druh objektov. V skutočnom svete existuje nespočetne veľa objektov toho istého druhu. Napr. Ferrari, ktoré si kúpime, je len jeden druh auta spomedzi množstva ďalších na svete. S použitím objektovo orientovanej terminológie hovoríme, že naše Ferrari ako objekt je inštancia (instance – objekt konkrétnej triedy) triedy auto.
+  <b>METODY:</b><br> 
+  <b>Dedičnosť:</b> Dedičnosť umožňuje znovupoužiteľnosť kódu pomocu zovšeobecnenia viacerých tried. Skupina tried s rovnakými vlastnosťami môže tvoriť "nadtriedu". Triedy tvoria hierarchiu pomocou dedičnosti. Zapuzdrenie: Implementačné detaily triedy sú skryté a vlastná funkčnosť je zvýraznená. Metódy a atribúty sú rozdelené na dve skupiny:<br> 
+   <ul>
+     <li>Implementačné detaily </li>
+     <li>Vlastná funkčnosť objektu</li>
+   </ul> 
+  <b>Zapuzdrenie</b> nám definuje rozhranie objektu, pomocou ktorého môžeme vykonávať funkčnosť.<br> 
+  <b>Abstrakcia:</b> Pod abstrakciou sa vo všeobecnosti chápe zameranie sa na kľúčové vlastnosti nejakého prvku reálneho sveta (alebo aj nereálneho). V OOP to zúžitkujeme to hlavne pri abstraktných trieda<br> 
+  <b>Konštruktor a deštruktor</b><br>
+  Sú to funkcie, ktoré sa automaticky spustia pri vytvorení (konštruktor) a pri zániku (deštruktor) objektu danej trie<br> 
+  Konštruktor sa používa najmä na počiatočné nastavenie hodnoty dát daného objektu a na alokáciu potrebnej pamä<br>
+  Deštruktor sa používa na “upratanie”, teda hlavne na dealokáciu vyhradenej pamä<br> 
+  <b>Polymorfizmus:</b><br>
+  Ide o mnohotvárnosť, resp. viacúčelové využitie metód. Metóda s jedným názvom môže byť použitá pre rôzne typy dát alebo rôzny počet vstupov, čo uľahčuje orientáciu v progra<br>
+  
+  
+  </article>
+   
+  </body>
+</html>

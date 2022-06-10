@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='img/character-01.png' rel='shortcut icon' type='image/png'>
+    <link rel="stylesheet" href="kaskady.css" type="text/css">
+  </head>
+  
+  <body>
+  <header>
+  <h2>Vypracované témy na MS_2019</h2>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="informacie.html">Informácie okolo nás</a></li>
+    <li><a href="internet.html">Internet a informačná spoločnosť</a></li>
+    <li><a href="osko.html">Počítačové systémy a operačný systém</a></li>
+    <li><a href="word.html">Word</a></li>
+    <li><a href="powerpoint.html">PowerPoint</a></li>
+    <li><a href="programovanie.html">Algoritmizácia a programovanie </a></li>
+    <li><a href="c.html">Jazyk C</a></li>
+    <li><a href="java.html">Java</a></li>
+    <li><a href="HW.html">Hardvér</a></li>
+    <li><a class="active" href="tahacik.html">Ťaháčik</a></li>
+  </ul>
+  </nav>
+  <article>
+    <h1>generovanie cisel z intervalu a podmienka</h1>
+    <p>
+#include<stdio.h>   <br>
+#include<math.h>                                                                            <br>
+#include<time.h>                                                                                <br>
+
+ 
+int main(void)                                                                                      <br>
+
+{                                                                                                       <br>
+	int j,m=0,a,i,p[20];                                                                                      <br>
+	srand(time(0));                                                                                               <br>
+	for(i=0;i<20;i++)                                                                                                 <br>
+	{                                                                                                                     <br>
+		p[i]=rand()%181+20;                                                                                                     <br>
+		printf("%d\n",p[i]);                                                                                                        <br>
+	}                                                                                                                                 <br>
+	printf("-------------------------------------------------------------\n");                                                            <br>
+	for(i=19;i>=0;i--)                                                                                                                        <br>
+	{                                                                                                                                             <br>
+		printf("%d\n",p[i]);                                                                                                                            <br>
+	}                                                                                                                                                     <br>
+	scanf("%d",&a);                                                                                                                                           <br>
+	                                                                                                                                                              
+	for(j=0;j<20;j++)                                                                                  <br>
+	{                                                                                                      <br>
+		if(p[j]<a)                                                                                               <br>
+		{                                                                                                            <br>
+			m++;                                                                                                           <br>
+		}                                                                                                                    <br>
+	}                                                                                                                          <br>
+	printf("pocet cisel mensich ako %d je %d",a,m);                                                                                <br>
+	
+}
+<img src="img/tabulka.png" alt="tabulka.png, 21kB" title="tabulka" border="0" height="595" width="489"><br>  
+ </p>
+<h1>Javoslavec</h1>
+<h2>generovanie cisel</h2>
+<p>
+    public static void main(String[] args) {     <br>
+    Random cislo = new Random();                 <br>
+    int x;                                           <br>
+    
+    for (int i=0; i<10; i++){                            <br>
+        x = cislo.nextInt(10);                               <br>
+        System.out.println("cislo je "+ x);                      <br>
+    }                                                                <br>
+    
+    }                                                                    <br>
+</p>                                                                                                                                    <br>
+      
+<h2>javička pole</h2> 
+    System.out.println("zadaj cislo");   <br>
+    Scanner a = new Scanner(System.in);            <br>
+    int x = a.nextInt();                               <br>
+    int[] pole = new int[4];                               <br>
+    pole [1]=2;                                                <br>
+    int i;                                                         <br>
+    for(i=0;i<5;i++){                                                  <br>
+        System.out.println("cislo v poli "+pole[x]);                       <br>
+        <h2>vzorečky</h2>
+        x=Math.pow(8, (1.0/3.0)); <br>
+
+  </article>
+   
+  </body>
+  
+
+
+</html>
