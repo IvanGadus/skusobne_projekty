@@ -1,0 +1,179 @@
+@media (max-width: 1200px){
+    .container{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1450px){
+    .ss{
+        margin-right: 2px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 965px){
+    .container{
+        width: 98%;
+    }
+    .header ul li a{
+        font-size: 15px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 892px){
+    .row{
+        flex-direction: column;
+    }
+    .col1{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+    .col2{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1%;
+    }
+    .fill{
+        padding: 0;
+    }
+    .out{
+        margin-bottom: 1%;
+    }
+}
+
+@media (max-width: 786px){
+    .checkbtn {
+        display: flex;
+        color: rgba(197, 190, 190);
+    }
+    div.header{
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        
+    }
+
+    nav ul{
+        justify-content: center;
+        position: absolute;
+        float: none;      
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+        height: max-content;
+        top: 85%;
+        left: -100%;
+        background: rgba(163, 159, 159, 0.959);
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .header ul li{
+        width: 100%;
+    }
+
+    div.nav{
+        text-align: right;
+    }
+
+    .header ul li a{
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 20px 150px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    label .checkbtn{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        padding-bottom: 0;
+    }
+    .header h1{
+        margin-bottom: 10px;
+    }
+    .header{
+        position: fixed;
+        z-index: 100000;
+    }
+
+    .part p{
+        font-size: 13px;
+    }
+    .part .nadpis{
+        font-weight: 18px;
+    }
+    .celok{
+        margin-left: 0;
+        position: relative;
+        top: -10px;
+    }
+    .second_footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third {
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+
+    }
+    .third:nth-child(1){
+        margin-left: 15px;
+        margin: 0 auto;
+    }
+    .third ul li h2{
+        display: block;
+        width: 50%;
+        margin:0 auto ;
+    }
+
+    .third ul li p{
+        margin-left: 0;
+        display: block;
+        width: 50%;
+        text-align: left;
+        }
+}
+
+@media (max-width:428px){
+    .celok{
+        margin-left: 0;
+        position: relative;
+        top: -18px;
+    }
+}
+
+@media (max-width:785px){
+    .zdroje p{
+        display: block;
+    }
+    .zdroje{
+        width: 98%;
+        text-align: center;
+    }
+}
+
+@media (max-width:398px){
+    .col1 .part{
+        padding-bottom: 115px;
+    }
+}
