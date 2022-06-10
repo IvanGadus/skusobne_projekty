@@ -1,0 +1,198 @@
+/* navigation */
+
+@media screen and (max-width: 600px) {
+    .topnav {height: 48px;}
+    .topnav a {display: none;}
+    .resSocial a{
+        display: block;
+        
+    }
+    .resSocial{
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        right: 0%;
+
+    }
+    .centerRight{
+        display: flex;
+        height: 100%;
+        position: absolute;
+        right: 5%;
+        align-items: center;
+        
+    }
+
+    .responsive .resSocial{
+        display: none;
+    }
+    .topnav a.icon {
+      display: block;
+    }
+    
+}
+
+    /* arrowUp */
+@media screen and (max-width: 600px) {
+    .arrowUp{
+        height: 55px;
+        width: 55px;
+    }
+
+}
+
+
+    /* resSocial */
+
+@media screen and (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+    }
+    #secondImg{
+        overflow-x: hidden;
+    }
+    .resSocial{
+        display: flex;
+        position: relative;
+        z-index: 999999999999999;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        height: max-content;
+        width: 100vw;
+    }
+
+
+    .topnav.responsive a {
+      display: block;
+    }
+    .centerNav{
+        position: relative;
+        right: 0;
+        transform: translateX(-50%);
+    }
+
+    #icon {
+        color: white;
+        text-align: left;
+        overflow-y: hidden;
+        z-index: 2000;
+
+      }
+
+    .fa-bars{
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+    .topnav.responsive .icon{
+        position: absolute;
+        left: 0 ;
+        top: 0;
+    }
+    .social{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+}
+
+/* contact */
+
+@media screen and (max-width: 1000px) {
+    footer{
+        width: 100vw;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .openingHours, .contact, .operator {
+        height: max-content;
+    }
+    footer{
+        display: grid;
+        grid-template: "contact openingHours" 
+                        "operator operator"
+                        /1fr 1fr
+        ;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    .openingHours{
+        grid-area: openingHours;
+    }
+    .operator{
+        grid-area: operator;
+    }
+
+    .leftFooter{
+        float: none;
+        text-align: center;
+        
+    }
+    .operator{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer{
+        display: block;
+    }
+    .social {
+        display: none;
+    }
+    .openingHours, .contact , .operator{
+        padding-bottom: 40px;
+        padding-top: 0;
+    }
+    .contact{
+        padding-top: 40px;
+    }
+}
+
+/* gallery  */
+
+@media screen and (max-width: 700px) {
+    .gallery .imageGallery{
+        padding: 7px;
+        width: calc(100% / 2);
+    }
+    .gallery .imageGallery:nth-child(3n){
+        padding-right: 7px;
+    }
+    .gallery .imageGallery:nth-child(3n+1){
+        padding-left: 7px;
+    }
+
+    .previewBox{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #0a0b06e7;
+        top: 0%;
+        left: 0%; 
+        opacity: 0;
+        pointer-events: none;
+        z-index: 21;
+    }
+    .show{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50% -50%);
+        transition: all 1s ease;
+    
+    }
+    .previewBox .imgBox{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        max-height: 100vh;
+    
+    }
+}
